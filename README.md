@@ -22,7 +22,7 @@ NOURISH is written by Eloïse, a scientist working in research, who got tired of
 
 - Website: *(add your link here)*
 - Instagram: [@n.nourishyourcuriosity](https://www.instagram.com/n.nourishyourcuriosity/)
-- Contact: *(add the NOURISH email here)*
+- Contact: *nourishyourcuriosity@gmail.com*
 
 ## Built with
 
