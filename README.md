@@ -16,11 +16,11 @@ Every article explains the science in plain language, with sources, and says so 
 
 ## Who's behind it
 
-NOURISH is written by Eloïse, a scientist working in research, who got tired of watching people get scared with science they were never given the tools to check.
+NOURISH is written by me, Eloïse, a scientist working in research, who got tired of watching people get scared with science they were never given the tools to check.
 
 ## Links
 
-- Website: *(add your link here)*
+- Website: *(https://n-nutritionexplained.github.io/NOURISH/)*
 - Instagram: [@n.nourishyourcuriosity](https://www.instagram.com/n.nourishyourcuriosity/)
 - Contact: *nourishyourcuriosity@gmail.com*
 
