@@ -20,7 +20,7 @@
 
 <header>
 
-    <h1><a href="index.html">NOURISH</a><span class="brand-dot"></span></h1>
+    <h1><a href="index.html">NOURISH<span class="brand-dot"></span></a></h1>
 
     <p>Nutrition, explained.</p>
 
@@ -38,9 +38,13 @@
     <ul>
 
         <li><a href="index.html">HOME</a></li>
+
         <li><a class="active" href="food.html">THE FOOD</a></li>
+
         <li><a href="body.html">THE BODY</a></li>
+
         <li><a href="mind.html">THE MIND</a></li>
+
         <li><a href="about.html">ABOUT</a></li>
 
     </ul>
@@ -59,7 +63,9 @@
 
         <section class="calorie-hero">
 
-            <p class="calorie-label">THE FOOD · INVESTIGATION</p>
+            <p class="calorie-label">
+                THE FOOD · INVESTIGATION 01
+            </p>
 
             <h2>
                 What actually<br>
@@ -518,6 +524,63 @@
                     and maintain molecules such as proteins.
                 </p>
 
+                <p>
+                    Here's the part that's easy to miss: ATP isn't
+                    energy you keep. It's a molecule with
+                    <strong>three phosphate groups</strong>. Your cells
+                    spend it by snapping one phosphate off, which releases
+                    energy and leaves <strong>ADP</strong>, with two
+                    phosphates. Energy from food is what clips a phosphate
+                    back on. Spend, recharge, spend, recharge.
+                </p>
+
+<figure class="fig">
+  <p class="fig-eyebrow">So what is ATP?</p>
+  <p class="fig-title">A rechargeable battery.</p>
+  <svg viewBox="0 50 760 220" role="img" aria-label="ATP is adenosine plus three phosphates. Spending it releases one phosphate and energy, leaving ADP. Food energy puts the phosphate back.">
+    <defs>
+      <marker id="a-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18382a"/></marker>
+      <marker id="a-p" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e94f8a"/></marker>
+    </defs>
+
+    <!-- ATP (charged) -->
+    <rect class="stroke-g" x="40" y="112" width="56" height="56" rx="10"/>
+    <text x="68" y="149" text-anchor="middle" font-size="26" class="t-bold">A</text>
+    <g class="p-dot"><circle cx="128" cy="140" r="21"/><circle cx="180" cy="140" r="21"/><circle cx="232" cy="140" r="21"/></g>
+    <text x="128" y="147" text-anchor="middle" font-size="19" class="t-white">P</text>
+    <text x="180" y="147" text-anchor="middle" font-size="19" class="t-white">P</text>
+    <text x="232" y="147" text-anchor="middle" font-size="19" class="t-white">P</text>
+    <text x="68" y="196" text-anchor="middle" class="t-small">adenosine</text>
+    <text x="136" y="236" text-anchor="middle" font-size="16" class="t-bold">ATP</text>
+    <text x="136" y="257" text-anchor="middle" class="t-small">charged: 3 phosphates</text>
+
+    <!-- arrows -->
+    <path class="arrow" d="M278 122H378" marker-end="url(#a-g)"/>
+    <text x="328" y="108" text-anchor="middle" font-size="14" class="t-bold">spend</text>
+    <path class="arrow-pink" d="M378 164H278" marker-end="url(#a-p)"/>
+    <text x="328" y="150" text-anchor="middle" font-size="14" class="t-pink">recharge</text>
+    <rect x="296" y="214" width="64" height="30" rx="15" fill="#f9dce7" stroke="#e94f8a" stroke-width="2"/>
+    <text x="328" y="234" text-anchor="middle" font-size="14" class="t-pink">food</text>
+    <path class="arrow-pink" d="M328 212V176" marker-end="url(#a-p)"/>
+
+    <!-- ADP + free P -->
+    <rect class="stroke-g" x="424" y="112" width="56" height="56" rx="10"/>
+    <text x="452" y="149" text-anchor="middle" font-size="26" class="t-bold">A</text>
+    <g class="p-dot"><circle cx="512" cy="140" r="21"/><circle cx="564" cy="140" r="21"/><circle cx="676" cy="140" r="21"/></g>
+    <text x="512" y="147" text-anchor="middle" font-size="19" class="t-white">P</text>
+    <text x="564" y="147" text-anchor="middle" font-size="19" class="t-white">P</text>
+    <text x="676" y="147" text-anchor="middle" font-size="19" class="t-white">P</text>
+    <g stroke="#e94f8a" stroke-width="3" stroke-linecap="round">
+      <line x1="676" y1="102" x2="676" y2="82"/><line x1="710" y1="112" x2="724" y2="98"/><line x1="642" y1="112" x2="628" y2="98"/>
+      <line x1="716" y1="140" x2="738" y2="140"/><line x1="636" y1="140" x2="614" y2="140"/>
+    </g>
+    <text x="676" y="68" text-anchor="middle" font-size="14" class="t-pink">energy released</text>
+    <text x="452" y="196" text-anchor="middle" class="t-small">adenosine</text>
+    <text x="570" y="236" text-anchor="middle" font-size="16" class="t-bold">ADP + P</text>
+    <text x="570" y="257" text-anchor="middle" class="t-small">flat: 2 phosphates left</text>
+  </svg>
+</figure>
+
                 <div class="calorie-statement compact">
                     Food → chemical energy → cellular respiration → ATP → cellular work
                 </div>
@@ -534,6 +597,89 @@
                     energy from nutrients and transfer it into forms
                     they can use.
                 </p>
+
+                <details class="deep-dive">
+                    <summary>How does food actually recharge ATP?</summary>
+                    <div class="deep-dive-content">
+<figure class="fig fig-flat">
+  <svg viewBox="0 36 760 394" role="img" aria-label="Food is broken down: carbon leaves as CO2 and the energy stays in electrons. The electrons push hydrogen ions across a membrane. The ions flow back through a tiny turbine, ATP synthase, which builds ATP.">
+    <defs>
+      <marker id="b-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18382a"/></marker>
+      <marker id="b-p" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e94f8a"/></marker>
+    </defs>
+
+    <!-- H+ pile -->
+    <text x="48" y="60" font-size="14" class="t-pink">H⁺ pile up on this side</text>
+    <g class="p-dot">
+      <circle cx="250" cy="176" r="5"/><circle cx="288" cy="150" r="5"/><circle cx="322" cy="180" r="5"/><circle cx="356" cy="140" r="5"/>
+      <circle cx="392" cy="172" r="5"/><circle cx="426" cy="124" r="5"/><circle cx="458" cy="160" r="5"/><circle cx="492" cy="182" r="5"/>
+      <circle cx="268" cy="120" r="5"/><circle cx="340" cy="104" r="5"/><circle cx="410" cy="96" r="5"/><circle cx="476" cy="122" r="5"/>
+      <circle cx="610" cy="178" r="5"/><circle cx="648" cy="148" r="5"/><circle cx="684" cy="180" r="5"/><circle cx="700" cy="126" r="5"/>
+      <circle cx="630" cy="108" r="5"/><circle cx="520" cy="146" r="5"/>
+    </g>
+
+    <!-- membrane -->
+    <rect x="30" y="200" width="700" height="34" rx="6" fill="#f9dce7" stroke="#18382a" stroke-width="2"/>
+    <text x="44" y="222" class="t-small">inner membrane</text>
+
+    <!-- turbine -->
+    <rect x="552" y="236" width="16" height="50" fill="#18382a"/>
+    <rect x="542" y="190" width="36" height="52" rx="9" class="stroke-g" style="stroke-width:2.5"/>
+    <g class="p-dot"><circle cx="560" cy="206" r="5"/><circle cx="560" cy="226" r="5"/><circle cx="560" cy="262" r="5"/></g>
+    <circle cx="560" cy="322" r="36" class="stroke-g"/>
+    <g stroke="#18382a" stroke-width="3" stroke-linecap="round"><line x1="560" y1="322" x2="560" y2="358"/><line x1="560" y1="322" x2="529" y2="304"/><line x1="560" y1="322" x2="591" y2="304"/></g>
+
+    <!-- ATP out -->
+    <g>
+      <rect x="622" y="318" width="60" height="26" rx="13" fill="#e94f8a"/><text x="652" y="336" text-anchor="middle" font-size="13" class="t-white">ATP</text>
+      <rect x="622" y="350" width="60" height="26" rx="13" fill="#e94f8a"/><text x="652" y="368" text-anchor="middle" font-size="13" class="t-white">ATP</text>
+      <rect x="622" y="382" width="60" height="26" rx="13" fill="#e94f8a"/><text x="652" y="400" text-anchor="middle" font-size="13" class="t-white">ATP</text>
+    </g>
+
+    <!-- food + CO2 -->
+    <text x="70" y="268" text-anchor="middle" font-size="14" class="t-bold">food</text>
+    <polygon points="70,284 89,295 89,317 70,328 51,317 51,295" class="stroke-g" style="stroke-width:2.5"/>
+    <path class="arrow" d="M70 336V366" marker-end="url(#b-g)"/>
+    <g fill="#fff" stroke="#18382a" stroke-width="2"><circle cx="70" cy="390" r="19"/><circle cx="116" cy="398" r="19"/></g>
+    <text x="70" y="394" text-anchor="middle" font-size="11.5" class="t-bold">CO₂</text>
+    <text x="116" y="402" text-anchor="middle" font-size="11.5" class="t-bold">CO₂</text>
+    <text x="146" y="394" class="t-small">carbon leaves</text>
+    <text x="146" y="410" class="t-small">as CO₂ (you breathe it out)</text>
+
+    <!-- electrons -->
+    <path class="arrow" d="M104 306H206" marker-end="url(#b-g)"/>
+    <g class="p-dot"><circle cx="232" cy="296" r="6"/><circle cx="246" cy="312" r="6"/><circle cx="222" cy="316" r="6"/><circle cx="252" cy="294" r="6"/></g>
+    <text x="238" y="342" text-anchor="middle" font-size="13" class="t-pink">electrons</text>
+    <path class="arrow-pink" d="M276 306H398" marker-end="url(#b-p)"/>
+    <path class="arrow-pink" d="M310 286V248" marker-end="url(#b-p)"/>
+    <path class="arrow-pink" d="M356 286V248" marker-end="url(#b-p)"/>
+
+    <!-- oxygen -->
+    <circle cx="428" cy="306" r="22" fill="#fff" stroke="#18382a" stroke-width="2"/>
+    <text x="428" y="311" text-anchor="middle" font-size="13" class="t-bold">O₂</text>
+    <text x="428" y="352" text-anchor="middle" class="t-small">electrons end on oxygen</text>
+    <text x="428" y="368" text-anchor="middle" class="t-small">and make water</text>
+
+    <!-- badges -->
+    <g class="p-dot"><circle cx="28" cy="256" r="12"/><circle cx="262" cy="270" r="12"/><circle cx="26" cy="56" r="12"/><circle cx="606" cy="290" r="12"/></g>
+    <g class="t-white" font-size="14" text-anchor="middle"><text x="28" y="261">1</text><text x="262" y="275">2</text><text x="26" y="61">3</text><text x="606" y="295">4</text></g>
+  </svg>
+  <ol class="fig-steps">
+    <li><strong>Food is broken apart.</strong> The carbon leaves as CO₂, the one you breathe out.</li>
+    <li><strong>The energy stays behind in electrons.</strong> They pass it along like a baton.</li>
+    <li><strong>That energy pushes H⁺ across a membrane.</strong> They pile up on one side, like water behind a dam.</li>
+    <li><strong>H⁺ rush back through a tiny turbine.</strong> Each turn builds ATP from ADP and a phosphate. The electrons end up with oxygen and make water.</li>
+  </ol>
+</figure>
+                        <p>
+                            This is a simplified picture: real cells run
+                            many more steps in between. The turbine is a real
+                            enzyme, <strong>ATP synthase</strong>. In the
+                            textbook model, it takes roughly three to four
+                            H⁺ passing through to build one ATP.
+                        </p>
+                    </div>
+                </details>
 
                 <p class="pink-line">
                     Your cells aren't tiny car engines.
@@ -1005,13 +1151,23 @@
 
             </div>
 
-            <div class="fat-ending-final">
-                Nourish yourself.<br>
-                <span>Don't fear a whole macronutrient over one bad decade.</span>
-            </div>
-
         </section>
 
+
+        <aside class="author-note" role="note">
+            <div class="author-note-inner">
+                <div class="author-note-head">
+                    <p class="author-note-label">A note from me, outside the article.</p>
+                    <p class="author-note-lead">None of this science is mine.</p>
+                </div>
+                <p class="author-note-text">
+                    Other people ran the studies; they're in the sources below.
+                    I read them, try to make sense of them, and tell you what I
+                    think. <strong>The thinking is mine. The science isn't.</strong>
+                    I can get it wrong. Check me, and if I did, tell me.
+                </p>
+            </div>
+        </aside>
 
         <!-- =====================================================
              SOURCES
@@ -1042,6 +1198,17 @@
                     and Medicine. Dietary Reference Intakes.
                 </li>
 
+                <li>
+                    Tymoczko JL, Berg JM, Stryer L. Biochemistry: A Short
+                    Course, chapter 15: ATP as the universal currency of
+                    free energy.
+                </li>
+
+                <li>
+                    Berg JM, Tymoczko JL, Stryer L. Biochemistry, 5th ed.
+                    W H Freeman; 2002. ATP synthase (NCBI Bookshelf).
+                </li>
+
             </ol>
 
         </section>
@@ -1056,7 +1223,7 @@
 
     <div class="footer-brand">
 
-        <h2>NOURISH<span class="brand-dot"></span></h2>
+        <h2>NOURISH</h2>
 
         <p>Nutrition, explained.</p>
 
