@@ -20,7 +20,7 @@ NOURISH is written by me, Eloïse, a scientist working in research, who got tire
 
 ## Links
 
-- Website: *(https://n-nutritionexplained.github.io/NOURISH/)*
+- Website: *https://nourishyourcuriosity.com/*
 - Instagram: [@n.nourishyourcuriosity](https://www.instagram.com/n.nourishyourcuriosity/)
 - Contact: *nourishyourcuriosity@gmail.com*
 
