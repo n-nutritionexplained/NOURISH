@@ -15122,3 +15122,693 @@ body {
 .full-article .fig p.fig-title{max-width:none;margin:0 0 22px;padding:0;border:0;font-size:clamp(26px,4vw,34px);line-height:1.1;font-weight:700;letter-spacing:-.5px;color:var(--green)}
 .full-article .fig p.fig-caption{max-width:none}
 @media (max-width:600px){.fig{overflow-x:auto}.fig svg{min-width:540px}}
+
+/* =========================================================
+   NOURISH — COLLAGEN ARTICLE (THE BODY)
+
+   FIXED SPINE (site-wide): hero, twist, learned, ending, sources.
+   ROTATING: a feature reveal, the process-chain "journey", review and
+   funding rows, myth cards, cost maths, a deep-dive section, a context
+   list, a "what I didn't check" note, and the personal verdict.
+
+   Depends on the generic .process-chain, .myth-grid / .myth-card /
+   .cols-3, .deep-dive, .logic-chain, .evidence-source and
+   .author-note already being in style.css.
+
+   Append this block to the end of style.css
+========================================================= */
+
+.collagen-article {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 25px 140px;
+}
+
+.collagen-article p {
+    font-size: 18px;
+    line-height: 1.82;
+    max-width: 680px;
+    margin-top: 0;
+    margin-bottom: 27px;
+}
+
+.collagen-article em {
+    color: var(--green);
+}
+
+.collagen-label {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin: 0 0 25px !important;
+}
+
+.collagen-reading {
+    max-width: 700px;
+}
+
+
+/* HERO — FIXED SPINE */
+
+.collagen-hero {
+    min-height: 680px;
+    padding: 70px 20px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.collagen-hero h2 {
+    max-width: 1000px;
+    font-size: clamp(70px, 10vw, 125px);
+    line-height: .82;
+    letter-spacing: -6px;
+    color: var(--green);
+    margin: 70px 0;
+}
+
+.collagen-hero h2 span {
+    color: var(--pink);
+}
+
+.collagen-hero-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    border-top: 2px solid var(--green);
+    padding-top: 25px;
+}
+
+.collagen-hero-intro p {
+    font-size: 22px !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+    color: var(--green);
+}
+
+
+/* OPENING / STANDARD SECTIONS — rotating */
+
+.collagen-opening,
+.collagen-section {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 55px;
+    padding: 110px 0;
+    border-top: 1px solid var(--line);
+}
+
+.collagen-section-number {
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--pink);
+}
+
+.collagen-section-number span {
+    display: block;
+    margin-top: 18px;
+    font-size: 9px;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+}
+
+.collagen-section .collagen-reading > h3 {
+    max-width: 850px;
+    font-size: clamp(46px, 6.5vw, 72px);
+    line-height: .92;
+    letter-spacing: -3px;
+    color: var(--green);
+    margin: 0 0 50px;
+}
+
+.collagen-question-small {
+    max-width: 720px;
+    margin: 55px 0;
+    font-size: clamp(28px, 4vw, 46px);
+    line-height: 1.03;
+    letter-spacing: -1.5px;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.collagen-statement {
+    max-width: 780px;
+    margin: 60px 0;
+    padding: 32px 0 32px 28px;
+    border-left: 5px solid var(--pink);
+    font-size: clamp(26px, 3.6vw, 38px);
+    line-height: 1.3;
+    letter-spacing: -1px;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.collagen-statement span {
+    display: block;
+    margin-top: 10px;
+    color: var(--pink);
+}
+
+
+/* FEATURE — rotating */
+
+.collagen-feature {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 55px;
+    padding: 105px 0;
+    border-top: 2px solid var(--green);
+}
+
+.collagen-feature-number {
+    padding-top: 5px;
+    font-size: 44px;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--pink);
+}
+
+.collagen-feature .collagen-reading h4 {
+    font-size: clamp(36px, 5.2vw, 54px);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    color: var(--green);
+    margin: 0 0 50px;
+}
+
+.collagen-feature-statement {
+    max-width: 780px;
+    margin: 55px 0;
+    padding: 28px 0 28px 28px;
+    border-left: 5px solid var(--pink);
+    font-size: 26px;
+    line-height: 1.4;
+    color: var(--pink);
+    font-weight: 700;
+}
+
+
+/* THE EQUATION — rotating (uses generic .process-chain) */
+
+.collagen-equation-section {
+    padding: 20px 20px 110px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.collagen-equation-section h3 {
+    max-width: 750px;
+    font-size: clamp(34px, 5vw, 50px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: var(--green);
+    margin: 0 0 40px;
+}
+
+.collagen-equation-note {
+    margin: 30px 0 0 !important;
+    font-size: 15px !important;
+    color: #444b46;
+    max-width: 780px !important;
+}
+
+
+/* THE NUMBER — rotating */
+
+.collagen-numbers {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 100px;
+    margin: 0 -25px;
+    padding: 120px 70px;
+    background-color: var(--green);
+    color: var(--cream);
+}
+
+.collagen-numbers-heading h3 {
+    font-size: clamp(52px, 7.5vw, 84px);
+    line-height: .86;
+    letter-spacing: -4px;
+    color: var(--cream);
+    margin: 0;
+}
+
+.collagen-numbers .collagen-reading p {
+    color: var(--cream);
+}
+
+
+/* MYTH CARDS — rotating */
+
+.collagen-myths {
+    padding: 20px 20px 115px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.collagen-myths h3 {
+    max-width: 850px;
+    font-size: clamp(38px, 5.2vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: var(--green);
+    margin: 0 0 40px;
+}
+
+
+/* TWIST — FIXED SPINE */
+
+.collagen-twist {
+    margin: 115px -25px;
+    padding: 145px 70px;
+    background-color: var(--pink);
+}
+
+.collagen-twist .collagen-label {
+    color: var(--green);
+}
+
+.collagen-twist h3 {
+    max-width: 1000px;
+    font-size: clamp(58px, 9vw, 105px);
+    line-height: .84;
+    letter-spacing: -5px;
+    color: var(--green);
+    margin: 0;
+}
+
+.collagen-twist h3 span {
+    color: var(--cream);
+}
+
+.collagen-twist-copy {
+    max-width: 700px;
+    margin: 85px 0 0 auto;
+}
+
+.collagen-twist-copy p {
+    color: var(--green);
+}
+
+.collagen-twist-copy .collagen-question-small {
+    color: var(--green);
+}
+
+
+/* EVIDENCE — rotating */
+
+.collagen-evidence {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 105px 20px 55px;
+}
+
+.collagen-evidence h3 {
+    max-width: 850px;
+    font-size: clamp(38px, 5.2vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: var(--green);
+    margin: 0 0 40px;
+}
+
+
+/* CONTEXT — rotating */
+
+.collagen-context {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 55px 20px 100px;
+}
+
+.collagen-context h3 {
+    max-width: 850px;
+    font-size: clamp(38px, 5.2vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: var(--green);
+    margin: 0 0 40px;
+}
+
+
+/* LEARNED — FIXED SPINE */
+
+.collagen-learned {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 100px;
+    padding: 125px 20px;
+    background-color: var(--paper);
+}
+
+.collagen-learned-heading h3 {
+    font-size: clamp(48px, 7vw, 76px);
+    line-height: .9;
+    letter-spacing: -3.5px;
+    color: var(--green);
+    margin: 0;
+}
+
+
+/* ENDING — FIXED SPINE */
+
+.collagen-ending {
+    margin: 0 -25px;
+    padding: 145px 70px 110px;
+    background-color: var(--green);
+    color: var(--cream);
+}
+
+.collagen-ending > .collagen-label {
+    max-width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.collagen-ending h3 {
+    max-width: 1000px;
+    margin: 0 auto 75px;
+    font-size: clamp(52px, 8vw, 96px);
+    line-height: .86;
+    letter-spacing: -4.5px;
+    color: var(--cream);
+}
+
+.collagen-ending-copy {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.collagen-ending-copy p {
+    color: var(--cream);
+}
+
+.collagen-ending-final {
+    max-width: 1000px;
+    margin: 120px auto 0;
+    padding-top: 45px;
+    border-top: 2px solid var(--pink);
+    font-size: clamp(42px, 6.5vw, 74px);
+    line-height: .92;
+    letter-spacing: -2.5px;
+    color: var(--cream);
+    font-weight: 600;
+}
+
+.collagen-ending-final span {
+    color: var(--pink);
+}
+
+
+/* SOURCES — FIXED SPINE */
+
+.collagen-sources {
+    max-width: 900px;
+    margin: 90px auto 0;
+    padding: 55px 0;
+    border-top: 2px solid var(--green);
+}
+
+.collagen-sources h3 {
+    font-size: 40px;
+    color: var(--green);
+    margin: 0 0 32px;
+}
+
+.collagen-sources ol {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.collagen-sources li {
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .collagen-article { padding-left: 10px; padding-right: 10px; }
+    .collagen-hero { min-height: 600px; padding: 55px 10px 70px; }
+    .collagen-hero h2 { font-size: 52px; letter-spacing: -3px; margin: 60px 0; }
+    .collagen-hero-intro { grid-template-columns: 1fr; gap: 15px; }
+    .collagen-opening, .collagen-section, .collagen-feature { grid-template-columns: 1fr; gap: 25px; padding: 75px 10px; }
+    .collagen-question-small { font-size: 30px; }
+    .collagen-equation-section { padding: 10px 5px 85px; }
+    .collagen-numbers { grid-template-columns: 1fr; gap: 55px; margin-left: -10px; margin-right: -10px; padding: 75px 25px; }
+    .collagen-numbers-heading h3 { font-size: 48px; }
+    .collagen-myths { padding: 10px 5px 85px; }
+    .collagen-twist { margin-left: -10px; margin-right: -10px; padding: 80px 22px; }
+    .collagen-twist h3 { font-size: 52px; letter-spacing: -3px; }
+    .collagen-twist-copy { margin-top: 55px; }
+    .collagen-evidence, .collagen-context { padding-left: 5px; padding-right: 5px; }
+    .collagen-learned { grid-template-columns: 1fr; gap: 50px; padding: 80px 10px; }
+    .collagen-learned-heading h3 { font-size: 44px; }
+    .collagen-ending { margin-left: -10px; margin-right: -10px; padding: 85px 25px 75px; }
+    .collagen-ending h3 { font-size: 48px; letter-spacing: -3px; }
+    .collagen-ending-final { font-size: 36px; }
+    .collagen-sources { margin-top: 60px; padding: 40px 10px; }
+
+}
+
+/* DEEP DIVE inside this article */
+
+.collagen-evidence .deep-dive {
+    margin: 55px 0 0;
+}
+
+.collagen-evidence .deep-dive-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* LIMITS — "what I didn't check" note */
+
+.collagen-limits {
+    max-width: 700px;
+    margin: 0 auto 90px;
+    padding: 30px 30px 8px 36px;
+    border-left: 5px solid var(--pink);
+    background-color: var(--paper);
+}
+
+.collagen-limits p:last-child {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+    .collagen-limits { margin: 0 5px 70px; padding: 24px 20px 4px 24px; }
+}
+
+
+/* ROWS — reviews, funding, marine vs animal */
+
+.collagen-rows {
+    max-width: 760px;
+    margin: 50px 0;
+    border-top: 2px solid var(--green);
+}
+
+.collagen-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 30px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.collagen-row .row-tag {
+    font-size: 11px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--pink);
+    padding-top: 6px;
+}
+
+.collagen-article .collagen-row p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 12px;
+    max-width: none;
+}
+
+.collagen-article .collagen-row p.row-title {
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -.3px;
+    color: var(--green);
+    margin: 0 0 10px;
+}
+
+.collagen-row div > p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* COST */
+
+.collagen-cost {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 105px 20px 70px;
+}
+
+.collagen-cost h3,
+.collagen-else h3 {
+    max-width: 850px;
+    font-size: clamp(38px, 5.2vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: var(--green);
+    margin: 0 0 40px;
+}
+
+.collagen-cost h4 {
+    font-size: clamp(26px, 3.6vw, 34px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+    color: var(--green);
+    margin: 60px 0 30px;
+}
+
+.collagen-math {
+    margin: 40px 0 45px;
+    padding: 28px 30px 6px;
+    background-color: var(--paper);
+    border-left: 5px solid var(--pink);
+}
+
+.collagen-article .collagen-math p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.collagen-article .collagen-math p.collagen-math-example {
+    font-size: 15px;
+    color: #444b46;
+}
+
+
+/* EVERYTHING ELSE — deep dives */
+
+.collagen-else {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 55px 20px 70px;
+}
+
+.collagen-else .deep-dive {
+    margin: 0 0 18px;
+}
+
+.collagen-else .deep-dive-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* VERDICT */
+
+.collagen-verdict {
+    max-width: 920px;
+    margin: 40px auto 110px;
+    padding: 70px 55px 50px;
+    background-color: var(--paper);
+    border: 2px solid var(--green);
+    box-shadow: 10px 10px 0 var(--shadow, #d8d1c6);
+}
+
+.collagen-verdict h3 {
+    font-size: clamp(48px, 7vw, 84px);
+    line-height: .9;
+    letter-spacing: -3.5px;
+    color: var(--green);
+    margin: 0 0 35px;
+}
+
+.collagen-verdict h3 span {
+    color: var(--pink);
+}
+
+.collagen-article .verdict-intro {
+    font-size: 20px;
+    color: var(--green);
+    margin-bottom: 50px;
+}
+
+.verdict-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 50px;
+    border-top: 2px solid var(--green);
+}
+
+.verdict-item {
+    padding: 30px 0 14px;
+    border-bottom: 1px solid var(--line);
+}
+
+.verdict-q {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 12px;
+}
+
+.verdict-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+
+.collagen-article .verdict-item p {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: none;
+    margin-bottom: 18px;
+}
+
+.collagen-article .verdict-item p.verdict-a {
+    font-size: 24px;
+    line-height: 1.15;
+    letter-spacing: -.6px;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 14px;
+}
+
+.collagen-article .verdict-change {
+    max-width: none;
+    margin: 40px 0 0;
+    padding: 24px 0 0 26px;
+    border-left: 5px solid var(--pink);
+    font-size: 18px;
+    color: var(--green);
+}
+
+@media (max-width: 700px) {
+    .collagen-row { grid-template-columns: 1fr; gap: 8px; }
+    .collagen-cost { padding: 75px 5px 55px; }
+    .collagen-else { padding: 35px 5px 55px; }
+    .collagen-math { padding: 22px 20px 4px; }
+    .collagen-verdict { margin: 20px 0 80px; padding: 45px 22px 30px; box-shadow: 6px 6px 0 var(--shadow, #d8d1c6); }
+    .collagen-verdict h3 { font-size: 48px; letter-spacing: -2.5px; }
+    .verdict-grid { grid-template-columns: 1fr; }
+}
